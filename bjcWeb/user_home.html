@@ -1,0 +1,155 @@
+<html>
+ <head>
+  <title>
+   Beauty and Joy of Computing
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+  </style>
+  <script>
+   document.addEventListener('DOMContentLoaded', function () {
+            const enrollButtons = document.querySelectorAll('.enroll-btn');
+            enrollButtons.forEach(button => {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const courseCard = this.closest('.course-card');
+                    const enrolledSection = document.querySelector('#enrolled-courses');
+                    enrolledSection.appendChild(courseCard);
+                    this.remove();
+                });
+            });
+        });
+  </script>
+ </head>
+ <body>
+  <div class="bg-green-500 text-white p-4 flex justify-between items-center">
+   <h1 class="text-3xl font-bold">
+    Beauty and Joy of Computing
+   </h1>
+   <div>
+    <a class="text-white hover:text-gray-200" href="#">
+     <i class="fas fa-user-circle text-3xl">
+     </i>
+    </a>
+   </div>
+  </div>
+  <div class="container mx-auto p-4">
+   <h2 class="text-2xl font-bold mb-4">
+    Enrolled Courses
+   </h2>
+   <div class="flex flex-wrap justify-center" id="enrolled-courses">
+    <div class="course-card bg-white rounded-lg shadow-md m-4 w-72 overflow-hidden">
+     <img alt="Image representing Programming concept in computing" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/taOeKKjxy0RfP0zdGJYp0ZBTYvnKb5rgcpQpQXIdPMqzuuvTA.jpg" width="300"/>
+     <div class="p-4">
+      <h3 class="text-xl font-bold">
+       Programming
+      </h3>
+      <p class="text-gray-600">
+       Explore the world of programming and learn to write code to solve problems.
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="container mx-auto p-4">
+   <h2 class="text-2xl font-bold mb-4">
+    Discover More Courses
+   </h2>
+   <div class="flex flex-wrap justify-center" id="discover-courses">
+    <div class="course-card bg-white rounded-lg shadow-md m-4 w-72 overflow-hidden">
+     <img alt="Image representing Abstraction concept in computing" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/49RFh8BS63bbD5TOjN0Yf5HdjoccE7qaXIkWrcrgyb2bX33JA.jpg" width="300"/>
+     <div class="p-4">
+      <h3 class="text-xl font-bold">
+       Abstraction
+      </h3>
+      <p class="text-gray-600">
+       Learn about the concept of abstraction and how it simplifies complex systems.
+      </p>
+      <a class="enroll-btn block bg-green-500 text-white text-center py-2 mt-4 rounded" href="#">
+       Enroll Now
+      </a>
+     </div>
+    </div>
+    <div class="course-card bg-white rounded-lg shadow-md m-4 w-72 overflow-hidden">
+     <img alt="Image representing Algorithms concept in computing" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/97R2DwR7HJpFClTHeMJrjX5JUMh3lqiBWVM6BExuZQe2uuvTA.jpg" width="300"/>
+     <div class="p-4">
+      <h3 class="text-xl font-bold">
+       Algorithms
+      </h3>
+      <p class="text-gray-600">
+       Understand the step-by-step procedures for solving problems efficiently.
+      </p>
+      <a class="enroll-btn block bg-green-500 text-white text-center py-2 mt-4 rounded" href="#">
+       Enroll Now
+      </a>
+     </div>
+    </div>
+    <div class="course-card bg-white rounded-lg shadow-md m-4 w-72 overflow-hidden">
+     <img alt="Image representing Data concept in computing" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/YZp7L61PoQ6BBVYFC20bNfesH8JKuahgJSIf5VjijGWpddfOB.jpg" width="300"/>
+     <div class="p-4">
+      <h3 class="text-xl font-bold">
+       Data
+      </h3>
+      <p class="text-gray-600">
+       Discover how data is collected, analyzed, and used to make decisions.
+      </p>
+      <a class="enroll-btn block bg-green-500 text-white text-center py-2 mt-4 rounded" href="#">
+       Enroll Now
+      </a>
+     </div>
+    </div>
+    <div class="course-card bg-white rounded-lg shadow-md m-4 w-72 overflow-hidden">
+     <img alt="Image representing Internet concept in computing" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/Ij4Xe4gDyGzKfEZCgrisYj6XdGs3xewweGsX7eeBvAkisr77E.jpg" width="300"/>
+     <div class="p-4">
+      <h3 class="text-xl font-bold">
+       Internet
+      </h3>
+      <p class="text-gray-600">
+       Learn about the structure and functioning of the internet and its impact on society.
+      </p>
+      <a class="enroll-btn block bg-green-500 text-white text-center py-2 mt-4 rounded" href="#">
+       Enroll Now
+      </a>
+     </div>
+    </div>
+    <div class="course-card bg-white rounded-lg shadow-md m-4 w-72 overflow-hidden">
+     <img alt="Image representing Impact of Computing concept in computing" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/oVqVQZohDV56LtVhxCRrZLT7TwGRYAuTdZJRJmedbcbYX33JA.jpg" width="300"/>
+     <div class="p-4">
+      <h3 class="text-xl font-bold">
+       Impact of Computing
+      </h3>
+      <p class="text-gray-600">
+       Understand the social, ethical, and global impacts of computing technology.
+      </p>
+      <a class="enroll-btn block bg-green-500 text-white text-center py-2 mt-4 rounded" href="#">
+       Enroll Now
+      </a>
+     </div>
+    </div>
+    <div class="course-card bg-white rounded-lg shadow-md m-4 w-72 overflow-hidden">
+     <img alt="Image representing Creativity concept in computing" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/zNPNMVrgeE1pYifei4vM0flgUTqsEuyqqZDweTOTRu1D319dC.jpg" width="300"/>
+     <div class="p-4">
+      <h3 class="text-xl font-bold">
+       Creativity
+      </h3>
+      <p class="text-gray-600">
+       Explore how computing fosters creativity and innovation in various fields.
+      </p>
+      <a class="enroll-btn block bg-green-500 text-white text-center py-2 mt-4 rounded" href="#">
+       Enroll Now
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
